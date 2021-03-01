@@ -1,9 +1,9 @@
-import axios from "axios"
+import axios from "axios";
 
-const baseApiURL = "http://localhost:4000"
+const baseApiURL = "http://localhost:4000";
 
 const api = axios.create({
-  baseURL: baseApiURL
-})
+  baseURL: baseApiURL,
+});
 
-export default api
+export default api;

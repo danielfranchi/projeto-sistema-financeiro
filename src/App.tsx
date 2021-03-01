@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-import { BrowserRouter } from 'react-router-dom'
-import Routes from './route'
-
-import Teste from './pages/Teste'
+import { BrowserRouter } from "react-router-dom";
+import Routes from "./route";
 
 const App = () => {
   return (
@@ -11,9 +9,8 @@ const App = () => {
       <BrowserRouter>
         <Routes />
       </BrowserRouter>
-
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

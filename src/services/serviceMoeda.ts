@@ -1,7 +1,7 @@
-import axios from 'axios'
+import axios from "axios";
 
 const moedas = {
-  getMoedas: () => axios.get('https://v2.api.forex/infos/currencies.json')
-}
+  getMoedas: () => axios.get("https://v2.api.forex/infos/currencies.json"),
+};
 
-export default moedas
+export default moedas;
