@@ -1,6 +1,5 @@
 import React from 'react'
-import Cadastro from '../../components/Cadastro/Cadastro'
-import Login from '../../components/Login/Login'
+import FormLogin from '../../components/FormLogin/FormLogin'
 
 import { useSelector } from 'react-redux'
 
@@ -9,7 +8,7 @@ import { LoginUser } from '../../store/ducks/login/types'
 import { Redirect } from 'react-router-dom'
 
 
-const HomeLogin = () => {
+const Login = () => {
 
 
   let logado = false
@@ -22,11 +21,10 @@ const HomeLogin = () => {
   }
 
   return (
-    <div>
-      <Cadastro />
-      <Login />
-      
 
+    <div>
+      <FormLogin />
+      
       {
         logado ?
         <Redirect to="/home" />
@@ -38,4 +36,4 @@ const HomeLogin = () => {
   )
 }
 
-export default HomeLogin
+export default Login
